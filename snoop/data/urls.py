@@ -25,4 +25,7 @@ urlpatterns = [
     path('<collection>/<hash>/tags/<username>/<uuid>', include(tags_router.urls)),
     path('<collection>/<hash>/thumbnail/<size>.jpg', views.thumbnail),
     path('<collection>/<hash>/pdf-preview', views.pdf_preview),
+
+    path('<collection>/<hash>/rename', views.rename),
+    path('<collection>/<hash>/delete', views.delete),
 ]
