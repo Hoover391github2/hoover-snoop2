@@ -4,29 +4,27 @@
 #
 #    pip-compile requirements-mkdocs.in
 #
-amqp==5.0.5
+amqp==5.1.1
     # via kombu
 aniso8601==7.0.0
     # via graphene
 asgiref==3.3.1
     # via django
 astunparse==1.6.3
-    # via
-    #   -r requirements-mkdocs.in
-    #   pytkdocs
-billiard==3.6.3.0
+    # via -r requirements-mkdocs.in
+billiard==3.6.4.0
     # via celery
 bracex==2.1.1
     # via
     #   -r requirements-mkdocs.in
     #   wcmatch
-celery==5.0.5
+celery==5.2.2
     # via -r requirements-mkdocs.in
 certifi==2020.12.5
     # via requests
 chardet==4.0.0
     # via requests
-click==7.1.2
+click==8.1.3
     # via
     #   -r requirements-mkdocs.in
     #   celery
@@ -39,7 +37,7 @@ click-didyoumean==0.0.3
     # via celery
 click-plugins==1.1.1
     # via celery
-click-repl==0.1.6
+click-repl==0.2.0
     # via celery
 coreapi==2.3.3
     # via drf-yasg
@@ -90,7 +88,7 @@ joblib==1.0.1
     # via
     #   -r requirements-mkdocs.in
     #   nltk
-kombu==5.0.2
+kombu==5.2.4
     # via celery
 livereload==2.6.3
     # via
@@ -188,10 +186,8 @@ regex==2021.3.17
     #   nltk
 requests==2.25.1
     # via coreapi
-ruamel.yaml==0.16.13
+ruamel-yaml==0.16.13
     # via drf-yasg
-ruamel.yaml.clib==0.2.2
-    # via ruamel.yaml
 rx==1.6.1
     # via graphql-core
 singledispatch==3.7.0
@@ -232,6 +228,7 @@ vine==5.0.0
     # via
     #   amqp
     #   celery
+    #   kombu
 wcmatch==8.1.2
     # via
     #   -r requirements-mkdocs.in
